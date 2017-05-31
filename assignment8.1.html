@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student registration and Login form</title>
+<style>
+.formContainer {
+	height : 600px;
+	width  : 750px;
+	margin : 0 auto;
+	background-color: lightgrey;
+}
+.formSubContainer1{
+	width  : 300px;
+	position: absolute;
+	top    :100px;
+	left   : 420px;
+	font-weight: 800;
+	margin-top: 50px;
+}
+.formSubContainer2{
+	width  : 350px;
+	height : 350px;
+	float  :right;
+	position: absolute;
+	top    :120px;
+	left   : 740px;
+	background-color: #0000b3;
+	color  : white;
+	font-weight: 800;
+	margin-top: 50px;
+}
+h2{
+	margin-left: 20px;
+}
+span{
+	color  : #000066;
+}
+input{
+	padding: 10px;
+	margin : 5px;
+	width  :250px;
+}
+.formSubContainer2 input{
+	margin-left: 30px;
+}
+.formSubContainer1 input {
+	border :1px solid red;
+}
+</style>
+</head>
+<body>
+<div class="formContainer" style="margin-top: 70px;">
+<h2>Enter the system</h2>
+<p style="margin-left: 10px;">It is necessary to login in Your account in order to sign up for a course</p>
+
+<!--Below div is to fill in the details of a user to register -->
+<div class="formSubContainer1">
+<p style="margin-left:10px;">ARE YOU NEW? <span>REGISTER</span></p>
+<p><input type="text" name="username" placeholder="User name"></p>
+<p><input type="email" name=""  placeholder="Email"></p>
+<p><input type="password" name=""  placeholder="password"></p>
+<p><input type="password" name=""  placeholder="Confirm password"></p>
+<p><input type="submit" name="" value="Register" style="width:100px;margin-left:180px;border-color:black"></p>
+</div>
+
+<!--Below div is to enter the login details for already registered users-->
+<div class="formSubContainer2">
+	<p style="margin-left:10px;">ALREADY A STUDENT?   LOGIN</p>	
+	<p><input type="text" name="" placeholder="User name"></p>
+	<p><input type="password" name="" placeholder="password"></p>
+	<p><input type="checkbox" name="" style="width: 20px;">Remember me ?
+	   <input type="button" name="" value="Login" style="width:100px;border-color:orange;background-color: #0000b3;color:white"><br>
+	   <a href="#" style="float: right;margin-right:40px;color: white;">Forgot password?</a>
+ 	</p>
+</div>
+</div>
+</body>
+</html>
